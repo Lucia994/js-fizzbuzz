@@ -30,5 +30,9 @@ for (let i = 1; i <= 100; i++) {
     if (i % 3 === 0) {
         console.log("Fizz"); //deve stampare “Fizz” al posto del numero
     }
-    
+    // Se il numero è multiplo di 5
+    // Un numero è divisibile per 5 se la cifra delle unità è 0 oppure 5
+    if (i % 5 === 0) {
+        console.log("Buzz"); //deve stampare “Buzz” al posto del numero
+    }
 }
