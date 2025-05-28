@@ -25,10 +25,10 @@ for(counter; container; increment/decrement){
 //Scrivi un programma che stampi i numeri da 1 a 100
 for (let i = 1; i <= 100; i++) {
     console.log(i)
+    // Se il numero è multiplo di 3 
+    //Un numero è divisibile per 3 se la somma delle sue cifre è divisibile per 3
+    if (i % 3 === 0) {
+        console.log("Fizz"); //deve stampare “Fizz” al posto del numero
+    }
+    
 }
-
-//per i multipli di 3 stampi “Fizz” al posto del numero
-//Un numero è divisibile per 3 se la somma delle sue cifre è divisibile per 3
-//per i multipli di 5 stampi Buzz
-//un numero è divisibile per 5 se la cifra delle unità è 0 oppure 5
-//Per i numeri che sono sia multipli di 3 che di 5 
