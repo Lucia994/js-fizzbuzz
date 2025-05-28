@@ -10,32 +10,32 @@ proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 
 //Sintax only
 
-for(counter; container; increment/decrement){
+for(counter; container; increment){
 //you code here
 }
 -keyword: for
 -{}
 -counter: initialize a variable 'let i=0'
--condition: i < 10
--increment/decrement: i++ or i--
+-condition: i < 100
+-increment/decrement: i++ 
 -{//code inside the block}
 
  */
 
-//Scrivi un programma che stampi i numeri da 1 a 100
 for (let i = 1; i <= 100; i++) {
-    console.log(i)
-    // Se il numero è multiplo di 3 
-    //Un numero è divisibile per 3 se la somma delle sue cifre è divisibile per 3
-    if (i % 3 === 0) {
-        console.log("Fizz"); //deve stampare “Fizz” al posto del numero
+    // Se il numero è multiplo sia di 3 che di 5
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz"); // Output: deve stampare “FizzBuzz” al posto del numero
+    }
+    // Se il numero è multiplo di 3
+    else if (i % 3 === 0) {
+        console.log("Fizz"); // Output: deve stampare “Fizz” al posto del numero
     }
     // Se il numero è multiplo di 5
-    // Un numero è divisibile per 5 se la cifra delle unità è 0 oppure 5
-    if (i % 5 === 0) {
-        console.log("Buzz"); //deve stampare “Buzz” al posto del numero
+    else if (i % 5 === 0) {
+        console.log("Buzz"); // Output:deve stampare “Buzz” al posto del numero
     }
-    // Se il numero è multiplo sia di 3 che di 5
-    else if (i % 3 === 0 && i % 5 === 0) {
-    console.log("FizzBuzz");//deve stampare “FizzBuzz” al posto del numero
+    else {
+        console.log(i); // Output: altrimenti stampa il numero
+    }
 }
