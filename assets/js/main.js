@@ -15,13 +15,14 @@ for(counter; container; increment){
 }
 -keyword: for
 -{}
--counter: initialize a variable 'let i=0'
+-counter: initialize a variable 'let i=1'
 -condition: i < 100
--increment/decrement: i++ 
+-increment: i++ 
 -{//code inside the block}
 
  */
 
+// Ciclo for con contatore che esegue un loop da 1 a 100
 for (let i = 1; i <= 100; i++) {
     // Se il numero è multiplo sia di 3 che di 5
     if (i % 3 === 0 && i % 5 === 0) {
